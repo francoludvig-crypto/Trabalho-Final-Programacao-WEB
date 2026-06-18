@@ -5,67 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satoshi's Workshop</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>₿</text></svg>">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Tela de Título -->
+    <!-- ── Tela de Título ── -->
     <div id="title-screen" class="modal-overlay active">
         <div class="title-content">
             <div class="title-logo">₿</div>
             <h1>Satoshi's Workshop</h1>
-            <p class="subtitle">O Protocolo de Confiança</p>
+            <p class="subtitle">// O Protocolo de Confiança</p>
             <div class="choice-container">
-                <h3>Como você deseja interagir com a rede?</h3>
+                <h3>Selecione seu papel na rede</h3>
                 <div class="choices">
                     <button id="btn-oportunista" class="btn-wood btn-danger">
                         <span class="choice-icon">⚠️</span>
-                        <strong>Oportunista</strong>
-                        <small>Tentar burlar o sistema e fraudar blocos para lucro rápido.</small>
+                        <strong>Ator Malicioso</strong>
+                        <small>Tentar burlar o consenso e fraudar blocos para lucro rápido.</small>
                     </button>
                     <button id="btn-honesto" class="btn-wood btn-success">
                         <span class="choice-icon">🛡️</span>
-                        <strong>Validador Honesto</strong>
-                        <small>Trabalhar pelas regras, proteger a rede e ganhar legitimamente.</small>
+                        <strong>Nó Validador</strong>
+                        <small>Trabalhar pelas regras, proteger a rede e minerar legitimamente.</small>
                     </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Modal Caderno -->
+    <!-- ── Modal Lore (Capítulos) ── -->
     <div id="notebook-modal" class="modal-overlay">
         <div class="notebook">
-            <div class="notebook-page typewriter">
+            <div class="notebook-page">
                 <div class="notebook-lines"></div>
                 <h2 id="chapter-title">Capítulo</h2>
-                <p id="chapter-text">Carregando história...</p>
-                <div class="notebook-drawing" id="chapter-drawing">📦</div>
-                <button id="btn-start-chapter" class="btn-wood">Entendi, vamos lá!</button>
+                <p id="chapter-text">Carregando protocolo...</p>
+                <div class="notebook-drawing" id="chapter-drawing">₿</div>
+                <button id="btn-start-chapter" class="btn-wood">Entendi — iniciar missão</button>
             </div>
         </div>
     </div>
 
-    <!-- Modal Técnico -->
+    <!-- ── Modal Técnico (Glossário) ── -->
     <div id="tech-modal" class="modal-overlay">
-        <div class="tech-card typewriter">
+        <div class="tech-card">
             <div class="tech-header">
                 <h2 id="tech-title">Termo Técnico</h2>
-                <span class="tech-badge">GLOSSÁRIO</span>
+                <span class="tech-badge">PROTOCOLO</span>
             </div>
-            <div class="tech-body" id="tech-body">Explicação simples e técnica.</div>
-            <button class="btn-wood" onclick="document.getElementById('tech-modal').classList.remove('active')">✕ Fechar Documento</button>
+            <div class="tech-body" id="tech-body">Carregando definição...</div>
+            <button class="btn-wood" onclick="document.getElementById('tech-modal').classList.remove('active')">✕ Fechar</button>
         </div>
     </div>
 
-    <!-- Modal Bloco Gênesis -->
+    <!-- ── Modal Bloco Gênesis ── -->
     <div id="genesis-modal" class="modal-overlay">
-        <div class="tech-card genesis-card typewriter">
+        <div class="tech-card genesis-card">
             <div class="tech-header">
-                <h2>⛏️ Bloco Gênesis — Bloco #0</h2>
+                <h2>⛏️ Bloco Gênesis — #0</h2>
                 <span class="tech-badge genesis-badge">ORIGEM</span>
             </div>
             <div class="tech-body">
@@ -75,89 +75,88 @@
                 <br>
                 <p>Satoshi deixou uma mensagem oculta no campo <em>coinbase</em> deste bloco:</p>
                 <blockquote class="genesis-quote">"The Times 03/Jan/2009 Chancellor on brink of second bailout for banks"</blockquote>
-                <p class="genesis-quote-note">Uma referência à manchete do jornal britânico The Times — crítica direta ao sistema bancário centralizado que o Bitcoin veio questionar.</p>
+                <p class="genesis-quote-note">Referência à manchete do jornal britânico The Times — crítica direta ao sistema bancário centralizado que o Bitcoin veio questionar.</p>
                 <br>
-                <p>A recompensa do Bloco Gênesis (<strong>50 BTC</strong>) nunca foi resgatável — ela ficou bloqueada por uma peculiaridade do código original, tornando-a um símbolo eterno da criação.</p>
+                <p>A recompensa do Bloco Gênesis (<strong>50 BTC</strong>) nunca foi resgatável — ficou bloqueada por uma peculiaridade do código original, tornando-se um símbolo eterno da criação.</p>
             </div>
             <button class="btn-wood" onclick="document.getElementById('genesis-modal').classList.remove('active')">✕ Fechar</button>
         </div>
     </div>
 
-    <!-- Header -->
+    <!-- ── Header ── -->
     <header class="workshop-header">
         <div class="title-area">
             <div class="header-brand">
-                <span class="header-icon">⚙️</span>
-                <h1>Satoshi's Workshop</h1>
+                <span class="header-icon">₿</span>
+                <h1>Satoshi's <span>Workshop</span></h1>
             </div>
-            <span class="badge typewriter" id="current-task">Aguardando inicialização...</span>
+            <span class="badge mono" id="current-task">// aguardando inicialização...</span>
         </div>
         <div class="jar-area">
-            <div class="reward-title">Recompensa</div>
+            <div class="reward-title">Recompensa Acumulada</div>
             <div class="coin-jar">
-                <span class="jar-glass">₿ <span id="coin-count">0</span> BTC</span>
+                ₿&nbsp;<span id="coin-count">0</span>&nbsp;BTC
             </div>
         </div>
     </header>
 
     <main class="workshop-table">
 
-        <!-- Esteira -->
+        <!-- MEMPOOL -->
         <section class="conveyor-section">
-            <div class="section-label">📬 ESTEIRA DE TRANSAÇÕES</div>
+            <div class="label-tag">📡 Mempool — Transações Pendentes</div>
             <div class="wood-board">
                 <div class="conveyor-track" id="conveyor-track"></div>
             </div>
-            <!-- Botão de referência de Chaves P2P -->
             <div class="keys-reference-bar">
                 <button class="keys-reference-btn" onclick="app.mostrarExplicacao('chaves')">
-                    🔑 Entender Chaves Públicas &amp; Privadas (P2P)
+                    🔑 Entender Chaves Públicas &amp; Privadas (Criptografia Assimétrica)
                 </button>
             </div>
         </section>
 
-        <!-- Merkle + Manivela -->
+        <!-- HASHER + PoW -->
         <section class="machine-section">
             <div class="merkle-station">
-                <div class="section-label">🌳 PRENSA DE MERKLE</div>
+                <div class="label-tag">🌳 Merkle Tree — Hasher de Transações</div>
                 <div class="merkle-tree" id="merkle-tree">
                     <div class="merkle-level level-root">
-                        <div class="merkle-node root-node" id="node-root">Lacre</div>
+                        <div class="merkle-node root-node mono" id="node-root">Merkle Root</div>
                     </div>
                     <div class="merkle-level level-mid">
-                        <div class="merkle-node mid-node" id="node-mid-1">Hash AB</div>
-                        <div class="merkle-node mid-node" id="node-mid-2">Hash CD</div>
+                        <div class="merkle-node mid-node mono" id="node-mid-1">Hash AB</div>
+                        <div class="merkle-node mid-node mono" id="node-mid-2">Hash CD</div>
                     </div>
                     <div class="merkle-level level-base">
-                        <div class="merkle-slot" id="slot-1">Tx 1</div>
-                        <div class="merkle-slot" id="slot-2">Tx 2</div>
-                        <div class="merkle-slot" id="slot-3">Tx 3</div>
-                        <div class="merkle-slot" id="slot-4">Tx 4</div>
+                        <div class="merkle-slot mono" id="slot-1">Tx 0x1</div>
+                        <div class="merkle-slot mono" id="slot-2">Tx 0x2</div>
+                        <div class="merkle-slot mono" id="slot-3">Tx 0x3</div>
+                        <div class="merkle-slot mono" id="slot-4">Tx 0x4</div>
                     </div>
                 </div>
                 <div class="press-machine" id="press-machine">
                     <div class="press-piston"></div>
-                    <div class="press-base">PRENSA DE MERKLE</div>
+                    <div class="press-base">SHA-256</div>
                 </div>
             </div>
 
             <div class="crank-area">
-                <div class="section-label">⚡ PROVA DE TRABALHO</div>
-                <button id="btn-crank" class="crank-wheel" title="Girar Manivela (PoW)">
+                <div class="label-tag" style="font-size:0.6rem">⚡ Proof of Work</div>
+                <button id="btn-crank" class="crank-wheel" title="Minerar bloco (PoW)">
                     <span class="crank-handle"></span>
                 </button>
-                <div class="energy-label">Energia</div>
+                <div class="energy-label">Hash Power</div>
                 <div class="energy-meter">
                     <div class="energy-fill" id="energy-fill"></div>
                 </div>
-                <p class="helper-text typewriter">Gire a manivela para selar (PoW).</p>
+                <p class="helper-text">Clique para minerar.</p>
             </div>
         </section>
 
-        <!-- Prateleira + Rede -->
+        <!-- CHAIN + NETWORK -->
         <section class="bottom-section">
             <div class="shelf-area">
-                <div class="section-label">📦 BLOCKCHAIN — PRATELEIRA DE BLOCOS</div>
+                <div class="label-tag">📦 Blockchain — Ledger Distribuído</div>
                 <div class="wooden-shelf">
                     <div class="shelf-plank"></div>
                     <div class="blocks-container" id="ledger-shelf"></div>
@@ -166,23 +165,23 @@
 
             <div class="network-area">
                 <div class="network-header">
-                    <h3>🌐 Oficinas Vizinhas</h3>
-                    <span class="network-sub">Rede P2P</span>
+                    <h3>🌐 Nós da Rede</h3>
+                    <div class="network-sub">Consenso P2P</div>
                 </div>
                 <div class="nodes-container">
-                    <div class="network-node" id="node-a">Nó A</div>
-                    <div class="network-node" id="node-b">Nó B</div>
-                    <div class="network-node" id="node-c">Nó C</div>
+                    <div class="network-node mono" id="node-a">N-01</div>
+                    <div class="network-node mono" id="node-b">N-02</div>
+                    <div class="network-node mono" id="node-c">N-03</div>
                 </div>
-                <p class="helper-text typewriter" id="network-status">Aguardando blocos.</p>
+                <p class="helper-text mono" id="network-status">// aguardando blocos</p>
             </div>
         </section>
 
-        <!-- Explorador -->
+        <!-- BLOCK EXPLORER -->
         <section class="explorer-section">
             <div class="explorer-header">
-                <h3>🔍 Explorador de Blocos</h3>
-                <p class="helper-text typewriter">Clique nos termos em azul para ver os metadados de cada bloco.</p>
+                <h3>🔍 Block Explorer</h3>
+                <p class="helper-text">Clique nos termos em laranja para ver a definição técnica de cada campo.</p>
             </div>
             <div class="explorer-container" id="block-explorer"></div>
         </section>
