@@ -1,14 +1,14 @@
 const capitulos = [
-    { id: 0, titulo: "Capítulo 0: Gênesis", texto: "2009. A crise. Gire a manivela para gerar o primeiro bloco estável da história.", desenho: "🌱", tarefa: "Gire a manivela (PoW)" },
-    { id: 1, titulo: "Capítulo 1: O Envio Seguro", texto: "Use a lupa para auditar. Descarte a carta com selo vermelho borrado (chave privada inválida).", desenho: "🔍 ➔ ✉️", tarefa: "Inspecione as cartas na esteira" },
-    { id: 2, titulo: "Capítulo 2: O Pizza Day", texto: "Maio de 2010. Laszlo paga 10.000 BTCs em pizzas. Clique nas cartas para preencher a base da Árvore de Merkle.", desenho: "🍕 ➔ 📦", tarefa: "Preencha a base da Prensa" },
-    { id: 3, titulo: "Capítulo 3: Árvore de Merkle", texto: "Gire a manivela. Veja as transações serem esmagadas até formar o Lacre Dourado (A Raiz de Merkle).", desenho: "⚙️ ➔ 🥇", tarefa: "Gire a manivela para comprimir" },
-    { id: 4, titulo: "Capítulo 4: O Halving", texto: "2012. A rede cresce e a escassez matemática age. Observe sua Recompensa cair pela metade neste bloco.", desenho: "✂️ 🪙", tarefa: "Gire a manivela (PoW)" },
-    { id: 5, titulo: "Capítulo 5: Consenso Coletivo", texto: "Nenhum bloco entra sozinho. Observe as 'Oficinas Vizinhas' checarem e aprovarem seu bloco.", desenho: "✅ ✅ ✅", tarefa: "Mina e aguarde a rede" },
-    { id: 6, titulo: "Capítulo 6: Integridade (Ataque)", texto: "Vá à prateleira e clique em um bloco para adulterar o passado. Veja a Árvore e a Rede reagirem.", desenho: "📦 🔨", tarefa: "Clique em um bloco na prateleira" },
-    { id: 7, titulo: "Capítulo 7: Lightning Network", texto: "A rede se curou! A esteira está rápida. Gire a manivela rápido para transações de segunda camada.", desenho: "⚡", tarefa: "Gire a manivela rapidamente!" },
-    { id: 8, titulo: "Capítulo 8: A Sombra Quântica", texto: "Supercomputadores quânticos tentam forçar chaves. Sustente a rede girando a manivela!", desenho: "⚛️ ⏱️", tarefa: "Gire a manivela e sustente a rede!" },
-    { id: 9, titulo: "Capítulo 9: Cripto Pós-Quântica", texto: "Consenso alcançado: atualizamos as ferramentas para algoritmos pós-quânticos. Rede blindada.", desenho: "🛡️ 🌐", tarefa: "Sela o último bloco com segurança" }
+    { id: 0, titulo: "Bloco #0 — Gênesis", texto: "3 de Janeiro de 2009. O sistema financeiro global em colapso. Satoshi ativa o protocolo.\n\nGire o hasher para gerar o primeiro bloco da história — o alicerce imutável de toda a rede Bitcoin.", desenho: "⛏️", tarefa: "Gire o hasher (Proof of Work)" },
+    { id: 1, titulo: "Bloco #1 — Assinaturas Digitais", texto: "Nem toda transação é válida. Uma delas carrega uma assinatura digital corrompida — chave privada inválida.\n\nAuditores da rede detectam e descartam transações fraudulentas antes de incluí-las em qualquer bloco.", desenho: "🔑", tarefa: "Descarte a Tx com assinatura inválida" },
+    { id: 2, titulo: "Bloco #2 — Pizza Day", texto: "22 de Maio de 2010. Laszlo Hanyecz paga 10.000 BTC por duas pizzas — a primeira transação real com Bitcoin.\n\nClique nas transações para hashear cada uma e preencher a base da Merkle Tree.", desenho: "🍕", tarefa: "Selecione as Txs para a Merkle Tree" },
+    { id: 3, titulo: "Bloco #3 — Merkle Tree", texto: "Gire o hasher. As transações são comprimidas camada a camada pelo SHA-256 até formar a Merkle Root — o lacre criptográfico único de todo o bloco.", desenho: "🌳", tarefa: "Gire o hasher para comprimir" },
+    { id: 4, titulo: "Bloco #4 — Halving", texto: "28 de Novembro de 2012. Bloco #210.000 minerado.\n\nO protocolo corta a emissão pela metade: de 50 BTC para 25 BTC. Escassez matemática programada no código — imutável, previsível.", desenho: "✂️", tarefa: "Gire o hasher (PoW)" },
+    { id: 5, titulo: "Bloco #5 — Consenso Nakamoto", texto: "Nenhum bloco entra sozinho na chain. Os nós da rede verificam o hash, conferem as regras do protocolo e só então adicionam o bloco ao ledger.\n\nObserve os nós validarem seu bloco.", desenho: "🌐", tarefa: "Minere e aguarde o consenso" },
+    { id: 6, titulo: "Bloco #6 — Ataque de 51%", texto: "Um ator malicioso tenta reescrever o histórico alterando um bloco passado. Na prateleira, clique em um bloco para simular a adulteração.\n\nObserve a Merkle Tree e os nós da rede reagirem.", desenho: "⚠️", tarefa: "Clique em um bloco na chain" },
+    { id: 7, titulo: "Bloco #7 — Lightning Network", texto: "A chain principal sobreviveu ao ataque. Agora opera em alta velocidade com a Lightning Network — camada 2 que permite microtransações instantâneas sem sobrecarregar o protocolo base.", desenho: "⚡", tarefa: "Gire o hasher rapidamente!" },
+    { id: 8, titulo: "Bloco #8 — Ameaça Quântica", texto: "Computadores quânticos com poder de processamento massivo tentam quebrar chaves privadas por força bruta.\n\nA rede precisa de consenso urgente. Mantenha o hash power ativo!", desenho: "⚛️", tarefa: "Sustente o hash power!" },
+    { id: 9, titulo: "Bloco #9 — Criptografia Pós-Quântica", texto: "Consenso alcançado. A rede adota algoritmos resistentes a computadores quânticos — como CRYSTALS-Dilithium e FALCON.\n\nO protocolo evolui. A descentralização persiste.", desenho: "🛡️", tarefa: "Sela o bloco final" }
 ];
 
 const explicacoesTecnicas = {
@@ -33,8 +33,8 @@ const explicacoesTecnicas = {
         texto: "A identidade única e imutável deste bloco.\n\nO Hash Atual é calculado a partir de TODOS os dados do bloco: transações, timestamp, nonce e o hash anterior. Qualquer alteração, mesmo de um único caractere, gera um Hash completamente diferente.\n\nNo Bitcoin, o algoritmo usado é o SHA-256 (aplicado duas vezes). O resultado é sempre uma sequência de 64 caracteres hexadecimais. Para ser aceito pela rede, este Hash precisa começar com um certo número de zeros — isso é exatamente o que a 'Prova de Trabalho' garante."
     },
     chaves: {
-        titulo: "🔑 Chaves Públicas e Privadas (Criptografia P2P)",
-        texto: "A Metáfora do Carteiro:\n\n📬 Chave Pública (O Endereço):\nÉ a caixa de correio na calçada. Qualquer um pode ir lá e depositar uma mensagem ou moeda. Você pode divulgar sua chave pública livremente — ela é o seu endereço Bitcoin.\n\n🏠 Chave Privada (Sua Assinatura):\nÉ a chave física que abre a porta da sua casa. Só você tem. O carteiro deixa a encomenda, mas não entra. Com ela você assina e autoriza transações.\n\n⚠️ REGRA DE OURO:\nNunca compartilhe sua Chave Privada com ninguém. Quem tiver sua chave privada controla seus fundos — sem reversão possível."
+        titulo: "🔑 Criptografia Assimétrica — Chaves P2P",
+        texto: "Como funciona a identidade no Bitcoin:\n\n🔓 Chave Pública (Endereço Bitcoin):\nDeriivada matematicamente da chave privada via curva elíptica (secp256k1). É o seu endereço público — você pode divulgar livremente. Qualquer pessoa pode enviar BTC para ele.\n\n🔐 Chave Privada (Seed / Assinatura):\nUm número de 256 bits gerado aleatoriamente. Com ela você assina transações, provando que você é o dono dos fundos — sem jamais revelar a chave em si. É sua identidade criptográfica.\n\n⚠️ REGRA ABSOLUTA:\nNunca compartilhe sua chave privada. Não existe 'recuperação'. Quem tiver sua chave privada controla seus fundos — para sempre, sem reversão."
     }
 };
 
@@ -89,7 +89,7 @@ class GameEngine {
         document.getElementById('chapter-title').innerText = dados.titulo;
         document.getElementById('chapter-text').innerText = dados.texto;
         document.getElementById('chapter-drawing').innerText = dados.desenho;
-        this.ui.tarefa.innerText = `Missão: ${dados.tarefa}`;
+        this.ui.tarefa.innerText = `// ${dados.tarefa}`;
         this.ui.modalNotebook.classList.add('active');
     }
 
@@ -145,10 +145,14 @@ class GameEngine {
 
     gerarCartas(fase) {
         const tipos = fase === 1 ? ['bom', 'ruim', 'bom', 'bom'] : ['bom', 'bom', 'bom', 'bom'];
+        const valores = ['0.042 BTC', '0.100 BTC', '0.003 BTC', '0.271 BTC'];
         tipos.forEach((tipo, i) => {
             const carta = document.createElement('div');
-            carta.className = 'carta';
-            carta.innerHTML = `Tx ${i+1} <span class="selo ${tipo}"></span>`;
+            carta.className = `carta${tipo === 'ruim' ? ' carta-invalida' : ''}`;
+            carta.innerHTML = `
+                <div class="carta-id">TX-${String(i+1).padStart(4,'0')}</div>
+                <div class="carta-valor">${tipo === 'ruim' ? '⚠ SIG INVÁLIDA' : valores[i]}</div>
+            `;
 
             carta.addEventListener('click', () => {
                 if (fase === 1) {
@@ -156,7 +160,7 @@ class GameEngine {
                         carta.classList.add('carta-removendo');
                         setTimeout(() => {
                             carta.remove();
-                            this.ui.tarefa.innerText = "Ameaça removida! Agora gire a manivela.";
+                            this.ui.tarefa.innerText = "// Tx inválida removida — inicie o PoW";
                             this.ui.btnManivela.style.pointerEvents = "all";
                         }, 300);
                     } else {
@@ -165,11 +169,11 @@ class GameEngine {
                 } else if (fase === 2 || fase === 3) {
                     if (this.slotsPreenchidos < 4) {
                         this.slotsPreenchidos++;
-                        document.getElementById(`slot-${this.slotsPreenchidos}`).innerText = "Selado";
+                        document.getElementById(`slot-${this.slotsPreenchidos}`).innerText = "Hashed";
                         document.getElementById(`slot-${this.slotsPreenchidos}`).classList.add('node-active');
                         carta.remove();
                         if (this.slotsPreenchidos === 4 && fase === 2) {
-                            this.ui.tarefa.innerText = "Base preenchida! Agora gire a manivela.";
+                            this.ui.tarefa.innerText = "// Merkle base completa — inicie o PoW";
                             this.ui.btnManivela.style.pointerEvents = "all";
                         }
                     }
@@ -212,12 +216,12 @@ class GameEngine {
     }
 
     iniciarConsenso() {
-        this.ui.statusRede.innerText = "Validando Hash nas oficinas...";
+        this.ui.statusRede.innerText = "// broadcasting para peers...";
         this.ui.nosRede.forEach(node => { node.className = 'network-node validating'; });
 
         setTimeout(() => {
             this.ui.nosRede.forEach(node => { node.className = 'network-node approved'; });
-            this.ui.statusRede.innerText = "Consenso atingido (100%). Bloco validado!";
+            this.ui.statusRede.innerText = "// consenso: 3/3 nós aprovaram";
             this.guardarBloco();
         }, 1500);
     }
@@ -302,20 +306,20 @@ class GameEngine {
             const blocos = document.querySelectorAll('.cubo');
             blocos.forEach(b => b.classList.add('quebrado'));
 
-            this.ui.statusRede.innerText = "ALERTA: Divergência detectada!";
-            this.ui.nosRede.forEach(node => node.className = 'network-node rejected');
+            this.ui.statusRede.innerText = "// ALERTA: divergência de hash detectada";
+            this.ui.nosRede.forEach(node => node.className = 'network-node mono rejected');
 
             setTimeout(() => {
-                this.ui.statusRede.innerText = "Rede rejeitou sua fraude. Restaurando dados...";
+                this.ui.statusRede.innerText = "// fraude rejeitada — restaurando chain...";
                 let msg = this.filosofia === 'oportunista'
-                    ? "Ataque falhou. A rede protege o histórico."
-                    : "Lição vital. O consenso torna o passado inviolável.";
+                    ? "ATAQUE FALHOU.\nA rede detectou a divergência de hash e rejeitou a cadeia adulterada.\nProva de Trabalho impossível de falsificar."
+                    : "LIÇÃO VITAL:\nO consenso distribuído torna o passado inviolável.\nAlterar 1 bloco exige recomputar toda a cadeia — mais rápido que a rede honesta. Inviável.";
                 alert(msg);
 
                 blocos.forEach(b => b.classList.remove('quebrado'));
                 this.resetarMerkle();
-                this.ui.nosRede.forEach(node => node.className = 'network-node');
-                this.ui.statusRede.innerText = "Rede sincronizada.";
+                this.ui.nosRede.forEach(node => node.className = 'network-node mono');
+                this.ui.statusRede.innerText = "// chain restaurada — rede sincronizada";
                 this.avancarFase();
             }, 2000);
         }, 1000);
@@ -324,7 +328,7 @@ class GameEngine {
     avancarFase() {
         this.capituloAtual++;
         if (this.capituloAtual < capitulos.length) this.abrirCaderno();
-        else alert("Parabéns! Você concluiu a trilha Satoshi's Workshop!");
+        else alert("🎉 PROTOCOLO COMPLETO\nVocê concluiu a trilha Satoshi's Workshop!\nAgora você entende os fundamentos que fazem o Bitcoin funcionar.");
     }
 }
 
